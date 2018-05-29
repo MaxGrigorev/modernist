@@ -1,0 +1,45 @@
+@import "_variables";
+
+.b-form-contact {
+	//    border: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	.mainFontMixin();
+	text-align: left;
+	height: 250px;
+
+	&_size {}
+
+	&__name {
+		color: #989898;
+		font-size: 13px;
+		line-height: 15.6px;
+		text-align: left;
+
+		background-color: #222222;
+		height: 35px;
+		border: none;
+		border-radius: 8px;
+		padding: 0 0 0 10px;
+
+		&_message {
+			height: 80px;
+			padding: 8px 0 0 10px;
+		}
+	}
+
+	&__submit {
+		background-color: #76c38f;
+		width: 75px;
+		height: 35px;
+
+		color: #303030;
+		font-size: 12px;
+		line-height: 14.4px;
+		border: none;
+		border-radius: 8px;
+	}
+}

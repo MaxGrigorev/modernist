@@ -1,0 +1,64 @@
+@import "_variables";
+
+.b-work-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.mainFontMixin();
+	text-align: center;
+
+	&:hover {
+		border-color: #76c38f;
+	}
+
+	&__img {
+		display: flex;
+		//		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #353535;
+		border: 5px solid #fff;
+		font-size: 18px;
+		line-height: 21.6px;
+
+		&_size {
+			background-color: #333333;
+			min-width: 290px;
+			height: 190px;
+		}
+	}
+
+	&__text {
+		display: flex;
+		//		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(0, 0, 0, .9);
+
+		min-width: 290px;
+		height: 30px;
+		font-size: 14px;
+		line-height: 16.8px;
+
+
+
+		&_size {
+			position: relative;
+
+			bottom: 35px;
+			border: 0px;
+			border-left: 5px;
+			border-right: 5px;
+			border-style: solid;
+			border-color: #fff;
+		}
+
+		.b-work-item:hover & {
+			visibility: hidden;
+		}
+	}
+
+
+}

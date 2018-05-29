@@ -1,0 +1,80 @@
+@import "_variables";
+
+.b-post {
+	//    border: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	.mainFontMixin();
+	text-align: left;
+
+	&__h4 {
+		color: #76c38f;
+		font-size: 13px;
+		line-height: 15.6px;
+	}
+
+	&__domain {
+		display: block;
+		color: #666666;
+		font-size: 10px;
+		line-height: 12px;
+
+		&_tweets {
+			color: #979797;
+			font-size: 13px;
+			line-height: 20.8px;
+		}
+	}
+
+	&__author {
+		display: inline;
+		color: #76c38e;
+		font-size: 10px;
+		line-height: 12px;
+
+		&_tweets {
+			font-size: 13px;
+			line-height: 20.8px;
+		}
+	}
+
+	&__date {
+
+		color: #979797;
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	&__text {
+		color: #979797;
+		font-size: 13px;
+		line-height: 20.8px;
+	}
+
+	&__p {
+		color: #979797;
+		font-size: 12px;
+		line-height: 19.2px;
+	}
+
+	&__a {
+		color: #76c38f;
+		font-size: 13px;
+		line-height: 15.6px;
+
+		&:hover {
+			color: #76c38f;
+		}
+
+		&_border-bottom {
+			border-bottom: 1px solid #404040;
+		}
+
+		&_padding {
+			padding: 8px 0 4px 0;
+		}
+	}
+}

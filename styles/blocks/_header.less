@@ -1,0 +1,58 @@
+@import "_variables";
+
+.b-header {
+	.mainFontMixin(); //	color: #fff;
+	//	text-align: right;
+	&_size {
+		//            width: 1200px;
+		//            height: 600px;
+		//		margin: 0 0 40px 0;
+	}
+
+	&__logo {
+		.mainFontMixin();
+		font-size: 28px;
+		line-height: 28px;
+		text-align: left;
+		color: #fff;
+		height: 23px;
+
+		&_size {
+			margin: 0 0 40px 0;
+		}
+
+	}
+
+	&__nav-a {
+		.mainFontMixin();
+
+		width: 78px;
+		height: 35px;
+		padding: 7px 20px;
+		font-size: 13px;
+		line-height: 15.6px;
+		text-align: center;
+
+		&:hover {
+			color: #76c38f;
+		}
+
+		&_size {
+			border-radius: 8px;
+		}
+
+		&_active {
+			background-color: #76c38f;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+
+
+	}
+
+	&__name {}
+
+	&__menu {}
+}
